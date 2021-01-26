@@ -1,0 +1,275 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "open Sans", sans-serif;
+}
+
+#landing-page {
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
+}
+
+.welcome-text {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  top: 45%;
+  text-align: center;
+  color: white;
+
+  transform: scale(0.8);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 56px;
+  background-color: black;
+  align-items: center;
+  z-index: 99;
+}
+
+nav .logo {
+  width: 45px;
+  margin: 0.3em 1em;
+  float: left;
+}
+
+nav ul {
+  margin-left: auto;
+  position: sticky;
+}
+
+nav li {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+nav a {
+  padding: 1em 2em;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+nav li a:hover {
+  background-color: teal;
+}
+
+#about-me {
+  justify-content: space-around;
+  padding: 2em 0;
+  letter-spacing: 0.3px;
+}
+
+.section-introduction {
+  text-align: center;
+}
+
+.section-introduction img {
+  max-width: 12em;
+}
+
+.content-perkenalan {
+  font-size: 1.2em;
+  width: 80%;
+  line-height: 1.5;
+  max-width: 24em;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  text-align: justify;
+}
+
+.section-education,
+.section-working {
+  display: inline-block;
+  width: 49.5%;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 5em;
+}
+
+.section-education img {
+  max-width: 12em;
+}
+
+.content-perkenalan {
+  font-size: 1.2em;
+  max-width: 24em;
+  line-height: 1.5;
+  margin: 1em, auto;
+  text-align: justify;
+}
+
+.section-working img {
+  max-width: 12em;
+}
+
+#my-portofolio {
+  width: 100%;
+  padding: 2em 0;
+}
+
+.title-portofolio,
+.title-contact-us {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+.img-portofolio {
+  display: inline-block;
+  max-width: 300px;
+  width: 90%;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+hr {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.p-mobile {
+  display: none;
+}
+
+#contact-us {
+  vertical-align: top;
+}
+
+.form-contact-us,
+.contact-info {
+  width: 49.5%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.inputan {
+  width: 85%;
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+}
+
+.inputan label {
+  display: block;
+  font-size: 1.2em;
+}
+
+.inputan > input,
+.inputan > textarea {
+  width: 100%;
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+.btn-kirim {
+  width: 85%;
+  margin: 1em 0;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em 0;
+}
+
+.contact-icon {
+  width: 49.5%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+}
+.contact-icon img {
+  width: 50px;
+  margin: 2em;
+}
+
+footer {
+  width: 100%;
+  margin-top: 2em;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+  background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    width: 100%;
+  }
+  nav .logo {
+    display: none;
+  }
+  nav ul {
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  .section-education,
+  .section-working {
+    width: 100%;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 2em;
+  }
+
+  .content-perkenalan {
+    font-size: 1.2em;
+    width: 80%;
+    line-height: 1.5;
+    max-width: 24em;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+    text-align: justify;
+  }
+
+  .form-contact-us {
+    width: 100%;
+    text-align: center;
+  }
+
+  .p-mobile {
+    width: 100%;
+    display: inline-block;
+    color: black;
+    text-align: center;
+  }
+  .contact-info {
+    width: 100%;
+    text-align: center;
+    display: flex;
+  }
+
+  .contact-icon img {
+    margin: 2.5em;
+  }
+
+  .contact-dekstop {
+    display: none;
+  }
+}
